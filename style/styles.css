@@ -1,0 +1,41 @@
+:root {
+	--foreground-color: black;
+	--background-color: white;
+	--wrong-color: red;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+
+/* Define the animation */
+@keyframes alternating-colors {
+	0% {
+		color: var(--background-color);
+		background-color: var(--foreground-color);
+	}
+
+	50% {
+		color: var(--foreground-color);
+		background-color: var(--background-color);
+	}
+}
+
+.cursor {
+	animation: alternating-colors 2s steps(1, jump-end) infinite;
+}
+.next {
+	opacity: 0.5;
+}
+
+.wrong {
+  color: var(--wrong-color)
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-color: white;
+		--background-color: black;
+	}
+}
