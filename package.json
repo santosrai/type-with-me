@@ -1,0 +1,12 @@
+{
+  "name": "type-with-me",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "clean": "rm -rf dist",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}
